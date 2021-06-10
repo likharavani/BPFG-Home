@@ -1,0 +1,135 @@
+@media (max-width:1400px)
+{
+    html{
+        font-size: 80%;
+    }
+    .grid{
+        width:100%;
+    }
+    #member1{
+        height:auto;
+        clip-path: polygon(0% 0% , 100% 0% , 100% 100% , 95% 95% , 0% 100%);
+    }
+    .base-row{
+        padding:0;
+    }
+}
+
+
+@media (max-width:1000px)
+{
+    html{
+        font-size: 70%;
+    }
+   
+}
+@media (max-width:800px)
+{
+    html{
+        font-size: 60%;
+    }
+}
+@media (max-width:700px)
+{
+    .list,.social{
+        display: none;
+    }
+    html{
+        font-size: 50%;
+    }
+    #toggle:checked + .list{
+        display: flex;
+    }
+    #toggle:checked + .social{
+        display: flex;
+    }
+    .togglearea{
+        display: flex;
+ 
+    }
+
+    .navbar{
+        justify-content: space-between;
+        padding-left: 3rem;
+       
+        padding-right: 3rem;
+    }
+    .list ul{
+        position: absolute;
+        flex-direction: column;
+        top:10rem;
+        background-color:white;
+        color:black;
+        left:0px;
+        width:100%;
+        height:auto;
+    }
+    .list ul li{
+        border-bottom: 1px solid grey;
+        border-width: 100%;
+    }
+    .list ul li a{
+        color:black;
+       
+        
+    }
+
+    .list ul li a:hover{
+        color:cadetblue;
+        border: none;
+        
+    }
+    .base-col-2{
+        text-align: center;
+        width:100%;
+     padding: 0;
+    }
+    .base-col-2 p{
+        width:100%;
+        text-align: center;
+    }
+    .base-row,
+    .about-row,
+    .cont-row,
+    .service-row,
+    .touch-row{
+        width:100%;
+flex-direction: column;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    header, #cont, #member1{
+       height:max-content;
+       clip-path: none;
+    }
+    .base-col-1 , 
+    .base-col-2,
+    .about-col-1,
+    .about-col-2,
+    .cont-col-1,
+    .cont-col-2,
+    .service-col-1,
+    .service-col-2,
+    .touch-col-1,
+    .touch-col-2{
+        flex-basis: 1 1 100%;
+        height:auto;
+        padding:2rem;
+        max-width: 100%;
+    }
+  
+}
+@media (max-width:400px)
+{
+    html{
+        font-size: 40%;
+    }
+}
+@media (max-width:300px)
+{
+    html{
+        font-size: 30%;
+    }
+}
