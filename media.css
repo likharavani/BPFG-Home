@@ -6,28 +6,34 @@
     
 }
 
-
-@media (max-width:1000px)
-{
-    html{
-        font-size: 70%;
-    }
+@media screen (min-width:800px) and (max-width:1400px) {
     .grid{
         width:100%;
     }
     #member1{
         height:auto;
-        clip-path: polygon(0% 0% , 100% 0% , 100% 100% , 95% 95% , 0% 100%);
+       
     }
-    .base-row{
-        padding:0;
+}
+@media (max-width:1000px)
+{
+    html{
+        font-size: 70%;
     }
+   
    
 }
 @media (max-width:800px)
 {
     html{
         font-size: 60%;
+    }
+    .grid{
+        width:100%;
+    }
+  
+    .base-row{
+        padding:0;
     }
 }
 @media (max-width:700px)
