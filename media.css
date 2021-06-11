@@ -1,26 +1,28 @@
-@media (max-width:1400px)
+@media only screen and (max-width:1400px)
 {
     html{
-        font-size: 40%;
+        font-size: 45%;
     }
-    h1{
-        font-size: 3.4rem !important;
-       
+    .base-col-2{
+        flex-basis: 30%;
     }
-    h2{
-        font-size: 2.7rem !important; 
+    .base-col-1{
+        flex-basis: 70%;
+        padding-left: 2rem;
     }
+   
 }
-@media (max-width:1000px)
+@media only screen and (min-width:700px) and (max-width:1100px)
 {
-    html{
-        font-size: 40%;
-    }
+   
 }
-@media (max-width:700px)
+@media only screen and (max-width:700px)
 {
     .list,.social{
         display: none;
+    }
+    .base-col-1{
+        padding:5rem 0rem;
     }
     html{
         font-size: 50%;
@@ -42,13 +44,15 @@
        
         padding-right: 3rem;
     }
+ 
     .list ul{
-        position: absolute;
+      position: absolute;
         flex-direction: column;
         top:10rem;
         background-color:white;
         color:black;
         left:0px;
+        z-index: 100;
         width:100%;
         height:auto;
     }
@@ -58,8 +62,6 @@
     }
     .list ul li a{
         color:black;
-       
-        
     }
 
     .list ul li a:hover{
@@ -102,20 +104,20 @@ flex-direction: column;
     .service-col-2,
     .touch-col-1,
     .touch-col-2{
-        flex-basis: 1 1 100%;
+        flex-basis: 100%;
         height:auto;
         padding:2rem;
         max-width: 100%;
     }
   
 }
-@media (max-width:400px)
+@media only screen and (max-width:400px)
 {
     html{
         font-size: 40%;
     }
 }
-@media (max-width:300px)
+@media  only screen and (max-width:300px)
 {
     html{
         font-size: 30%;
